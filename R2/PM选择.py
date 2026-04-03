@@ -1,0 +1,15 @@
+num=int(input("输入PM2.5的数值:"))
+lv=''
+if(num<=35):
+    lv='优'
+elif(num<=75):
+    lv='良'
+elif(num<=115):
+    lv='轻度污染'
+elif(num<=150):
+    lv='中度污染'
+elif(num<=250):
+    lv='重度污染'
+else:
+    lv='严重污染'
+print(f'空气质量等级为{lv}')
